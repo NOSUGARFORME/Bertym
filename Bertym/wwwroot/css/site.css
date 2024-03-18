@@ -16,3 +16,11 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+header, footer {
+    background-color: #343a40;
+}
+
+.nav-color {
+    color: rgba(255, 255, 255, 0.5)
+}
