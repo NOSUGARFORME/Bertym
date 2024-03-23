@@ -2,6 +2,45 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Hello world!</h1>
-</div>
+<main class="container">
+    <h1>@ViewData["Text"]</h1>
+        <h2>Список</h2>
+        <ol style="list-style-type: upper-alpha">
+            <li>элемент 1 списка</li>
+            <li>элемент 2 списка</li>
+        </ol>
+        <hr />
+        <h2>Форма</h2>
+        <form action="http://google.com" method="post" class="">
+            <select asp-items="@ViewData["Lst"] as SelectList"></select>
+            <div class="d-flex flex-column ps-5 mb-5">
+                <div><input type="checkbox" name="checkbox1" value="checkbox1" /> <label for="checkbox1">Чек-бокс 1</label></div>
+                <div><input type="checkbox" name="checkbox2" value="checkbox2" /> <label for="checkbox2">Чек-бокс 2</label></div>
+            </div>
+
+            <div class="d-flex flex-row gap-2 ps-5 mb-5">
+                <div>
+                    <input type="radio" id="radio1" name="radios" value="radio1" checked />
+                    <label for="radio1">Радио-1</label>
+                </div>
+                <div>
+                    <input type="radio" id="radio2" name="radios" value="radio2" />
+                    <label for="radio2">Радио-2</label>
+                </div>
+                <div>
+                    <input type="radio" id="radio3" name="radios" value="radio3" />
+                    <label for="radio3">Радио-3</label>
+                </div>
+            </div>
+
+            <div class="mb-5">
+                <label for="login">Логин</label><input type="text" id="login" name="login" value="" placeholder="Введите имя"/>
+            </div>
+            <div class="mb-5">
+                <label for="password">Пароль</label><input type="text" id="password" name="password" value="" placeholder="Введите пароль"/>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Отправить</button>
+
+        </form>
+    </main>
