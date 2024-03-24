@@ -16,5 +16,7 @@
         public string Active { get; set; } = "";
         // текст надписи
         public string Text { get; set; } = "";
+
+        public bool RequiredAdminPrivileges { get; set; } = false;
     }
 }

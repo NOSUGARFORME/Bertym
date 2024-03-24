@@ -9,9 +9,7 @@ namespace Bertym.Components
         {
             new() { Controller="Home", Action="Index", Text="Lab 2"},
             new() { Controller="Product", Action="Index", Text="Каталог"},
-            new() { IsPage=true, Area="Admin", Page="/Index",
-                //Controller="Home", Action="Index", 
-                Text="Администрирование"}
+            new() { RequiredAdminPrivileges=true, IsPage=true, Area="Admin", Page="/Index", Text="Администрирование"}
         };
 
         public IViewComponentResult Invoke()
