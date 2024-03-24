@@ -7,11 +7,26 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Identity\Data\" />
-    <Folder Include="Areas\Identity\Models\" />
-    <Folder Include="Areas\Identity\Views\" />
+    <Compile Remove="Areas\Admin\Data\**" />
+    <Compile Remove="Areas\Admin\Models\**" />
+    <Compile Remove="Areas\Identity\Data\**" />
+    <Compile Remove="Areas\Identity\Models\**" />
+    <Compile Remove="Areas\Identity\Views\**" />
+    <Content Remove="Areas\Admin\Data\**" />
+    <Content Remove="Areas\Admin\Models\**" />
+    <Content Remove="Areas\Identity\Data\**" />
+    <Content Remove="Areas\Identity\Models\**" />
+    <Content Remove="Areas\Identity\Views\**" />
+    <EmbeddedResource Remove="Areas\Admin\Data\**" />
+    <EmbeddedResource Remove="Areas\Admin\Models\**" />
+    <EmbeddedResource Remove="Areas\Identity\Data\**" />
+    <EmbeddedResource Remove="Areas\Identity\Models\**" />
+    <EmbeddedResource Remove="Areas\Identity\Views\**" />
+    <None Remove="Areas\Admin\Data\**" />
+    <None Remove="Areas\Admin\Models\**" />
+    <None Remove="Areas\Identity\Data\**" />
+    <None Remove="Areas\Identity\Models\**" />
+    <None Remove="Areas\Identity\Views\**" />
   </ItemGroup>
 
   <ItemGroup>
